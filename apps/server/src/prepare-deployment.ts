@@ -12,7 +12,7 @@ if (process.env.VERCEL_ENV === "preview" && process.env.ALLOW_PREVIEW_MIGRATIONS
 if (process.env.VERCEL === "1") {
 	if (env.STORAGE_BACKEND !== "blob")
 		throw new Error("Vercel requires private Blob storage for direct uploads. Docker supports local, S3, and Blob.");
-	if (!env.REDIS_URL || !env.ENCRYPTION_SECRET) throw new Error("Vercel requires Redis and ENCRYPTION_SECRET.");
+	if (!env.ENCRYPTION_SECRET) throw new Error("Vercel requires ENCRYPTION_SECRET.");
 }
 await runDatabaseMigrations();
 
