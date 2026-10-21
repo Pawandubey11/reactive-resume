@@ -47,6 +47,8 @@ catalog:
   react-dom: 19.3.1
   react-native-web: ^0.21.4
   expo-observe: ~58.0.15
+  unrun: ^0.3.1
+  "@lingui/native-tools-win32-x64-msvc": ^0.2.0
 allowBuilds:
   esbuild: true
   lefthook: true

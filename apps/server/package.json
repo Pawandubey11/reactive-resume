@@ -101,6 +101,7 @@
 		"tsrs": "catalog:",
 		"tsx": "^4.23.15",
 		"typescript": "catalog:",
+		"unrun": "catalog:",
 		"vite-plus": "catalog:"
 	}
 }
